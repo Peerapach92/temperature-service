@@ -1,0 +1,12 @@
+services:
+  rabbitmq:
+    image: rabbitmq:4-management
+    container_name: temperature-rabbitmq
+    ports:
+      - "56730:5672"
+      - "15672:15672"
+    volumes:
+      - rabbitmq-data:/var/lib/rabbitmq
+
+volumes:
+  rabbitmq-data:

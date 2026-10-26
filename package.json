@@ -1,0 +1,13 @@
+{
+  "name": "temperature-notification",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "publisher": "node src/publisher.js",
+    "display": "node src/display-service.js",
+    "logger": "node src/log-service.js"
+  },
+  "dependencies": {
+    "amqplib": "^0.10.5"
+  }
+}
